@@ -1,1 +1,10 @@
-
+.h .m-level[lvl="4"] {
+    background-position: -21px -334px !important;
+}
+.h .h-vipType.disable {
+    background-color: #000000 !important;
+    color: #ceac00 !important; ;
+}
+.h-inner{
+    background-image: url("https://cglun.github.io/images/bg.gif") !important;
+}
