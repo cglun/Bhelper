@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "author": "李化云",
+  "name": "装B神器",
+  "description": "给B站装个X",
+  "version": "1.0",
+
+  "permissions": [
+    "https://*.bilibili.com/*"
+  ],
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches":["*://*.bilibili.com/*"],
+      "js": ["js/jquery.min.js","js/content.js"],
+      "css": ["css/css.css"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
