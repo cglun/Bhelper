@@ -17,7 +17,6 @@
   "content_scripts": [
     {
       "matches":["*://*.bilibili.com/*"],
-      "js": ["js/jquery.min.js","js/content.js"],
       "css": ["css/css.css"],
       "run_at": "document_end"
     }
