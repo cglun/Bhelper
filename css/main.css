@@ -1,1 +1,41 @@
+.main{
+    width: 400px;
+    height: 220px;
+    padding: 10px;
+}
+.btn:focus,
 
+.btn:active:focus,
+
+.btn.active:focus,
+
+.btn.focus,
+
+.btn:active.focus,
+
+.btn.active.focus {
+
+    outline:none;
+
+}
+.panel-heading{
+    background-color:rgb(51,112,183) !important;
+}
+.panel-title{
+    color: #fff;
+    font-size: 20px;
+
+}
+.panel-body{
+    margin-top: -1px;
+    border: 1px solid rgb(51,112,183);
+    border-top: 0px;
+
+}
+
+.list-group .btn{
+    line-height: 14px;
+}
+.video-list .video-item.matrix .info .time {
+   width: auto  ;
+}
