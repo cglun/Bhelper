@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>B站助手</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/content.js"></script>
+</head>
+<body>
+
+<div class="panel panel-default" style=" margin: 1px">
+    <div class="panel-heading">
+        <h3 class="panel-title" style="font-size: 16px">
+            <img src="images/bi.png" alt="B"> B管家(v1.1.6)
+        </h3>
+    </div>
+    <div class="panel-body">
+        <div class="panel panel-default" style="width: 300px;min-height: 100px;margin-bottom: 0">
+            <div class="panel-heading">
+                <h6 class="panel-title" style="font-size: 14px">
+                    <span class="biuser"></span>
+                </h6>
+            </div>
+            <div class="panel-body notice">
+                <p id="jointime"><span></span></p>
+
+
+            </div>
+            <div class="panel panel-default" style="margin-top: 4px;margin-bottom: 0px">
+                <div class="panel-heading">
+                    <h3 class="panel-title" style="font-size: 10px">
+                        屏蔽UP主列表 <span style="display: none;color: #000;background-color: #3cff08; padding: 1px ;" class="cgsave alert alert-success">已保存</span>
+                    </h3>
+                </div>
+                <div class="panel-body">
+
+                    <div class="input-group">
+                        <span class="input-group-addon" style="min-height: 30px">输入</span>
+                        <textarea class="form-control upname" rows="3" placeholder="UP主名字,中文逗号隔开" style="height: auto"></textarea>
+                        <textarea class="form-control bizhantitle" rows="3" placeholder="标题关键字,中文逗号隔开"></textarea>
+
+                    </div>
+
+
+                    <button type="button" class="btn btn-primary tianjia" style="margin-top: 10px;">保存</button>
+                    <button type="button" class="btn btn-danger delete-all" style="margin-top: 10px;">清空所有</button>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        提示信息
+                    </h4>
+                </div>
+                <div class="modal-body  btn-danger" style="font-size: 16px">
+                    确认请空内容？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        清空
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+</div>
+
+</body>
+</html>

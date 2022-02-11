@@ -1,0 +1,44 @@
+{
+  "author": "李化云",
+  "manifest_version": 2,
+  "name": "B管家",
+  "version": "1.1.6",
+  "description": "Bilibili辅助神器,可以一键评论，一键点赞！",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon.png",
+    "default_title": "B管家",
+    "description": "Bilibili辅助神器"
+  },
+  "background": {
+    "scripts": [
+      "js/jquery.min.js",
+      "js/background.js"
+    ]
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "cookies",
+    "http://*/*",
+    "https://*/*",
+    "storage"
+
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.bilibili.com/*","*://*.yehei.top/*"],
+
+      "js": ["js/jquery.min.js","js/bootstrap.min.js","js/content.js"],
+      "css": ["css/bootstrap.min.css","css/main.css"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
